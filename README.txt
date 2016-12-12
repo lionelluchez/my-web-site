@@ -5,5 +5,6 @@ This website has been created using:
 To be ran it locally you will need to install:
 - PHP
 - Bower though NPM (Node Package Manager)
+- The following command needs to be run to download all assets through Bower: "bower install"
 
 If you have any question, feel free to contact me: lionel.luchez<at>gmail.com
