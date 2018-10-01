@@ -13,6 +13,7 @@ function generate_json()
 {
 	$drawings = Array
 	(
+		Array("src" => "friendly_lunch.jpg", "title" => "Friendly Lunch (acrylic painting)"),
 		Array("src" => "fruits.jpg", "title" => "Fruits (acrylic painting)"),
 		Array("src" => "machu_picchu.jpg", "title" => "Machu Picchu (crayons)"),
 		Array("src" => "chevaliers.jpg", "title" => "Knights against dragons (drawing)"),
@@ -32,16 +33,16 @@ function generate_json()
 		Array("src" => "diabolic.jpg", "title" => "Diabolic (drawing)"),
 		Array("src" => "christelle.jpg", "title" => "Christelle (drawing)")
 	);
-	
+
 	$page = new Page();
 	foreach($drawings as &$drawing)
 	{
 		$url = $drawing['src'];
 		$drawing['src'] = Array(
-			"large" => $page->image(DIR_DRAWINGS_IMAGES.$url), 
+			"large" => $page->image(DIR_DRAWINGS_IMAGES.$url),
 			"thumb" => $page->image(DIR_DRAWINGS_THUMBS.$url)
 		);
 	}
-	
+
 	return $drawings;
 }
