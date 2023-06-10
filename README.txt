@@ -1,10 +1,16 @@
+## Info
+
 This website has been created using:
-- CodeIgniter -- a light-weight PHP framework  (http://www.codeigniter.com/)
-- Bower -- a package manager (https://bower.io/)
+- [CodeIgniter](http://www.codeigniter.com/), light-weight PHP framework
+- [Bower](https://bower.io/), a package manager
 
-To run it locally you will need to install:
-- PHP
-- Bower though NPM (Node Package Manager)
-- The following command needs to be run to download all assets through Bower: "bower install"
+## Setup
 
-If you have any question, feel free to contact me: lionel.luchez<at>gmail.com
+- Install PHP
+- Install Bower though NPM (Node Package Manager)
+- Download all assets via: `bower install`
+
+
+## Repos
+
+[lionelluchez/my-web-site](https://github.com/lionelluchez/my-web-site)
