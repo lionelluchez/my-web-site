@@ -11,17 +11,6 @@ function browser_only_supports_jquery1()
 	return false;
 }
 
-
-function str_starts_with($haystack, $needle)
-{
-	return ($needle === "") || (strrpos($haystack, $needle, -strlen($haystack)) !== false);
-}
-
-function str_ends_with($haystack, $needle)
-{
-	return ($needle === "") || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== false);
-}
-
 function filter_panels($file)
 {
 	return ( str_starts_with($file, 'panel-') && str_ends_with($file, '.php') );
